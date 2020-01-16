@@ -1,0 +1,49 @@
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:1,
+    loop:true,
+    margin:10,
+    autoHeight:true,
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    autoplaySpeed:1000,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            loop:true,
+		    margin:10,
+		    autoHeight:true,
+		    autoplay:true,
+		    autoplayTimeout:5000,
+		    autoplayHoverPause:true,
+		    autoplaySpeed:1000,
+		    responsiveClass:true,
+        },
+        600:{
+			items:2,
+			loop:true,
+			margin:10,
+			autoHeight:true,
+			autoplay:true,
+			autoplayTimeout:5000,
+    		autoplaySpeed:1000,
+			autoplayHoverPause:true
+        },
+        1000:{
+			items:4,
+			loop:true,
+			margin:10,
+			autoHeight:true,
+			autoplay:true,
+			autoplayTimeout:5000,
+   			autoplaySpeed:1000,
+			autoplayHoverPause:true
+        }
+    }
+});
